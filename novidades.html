@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style=" background: #eee;">
+<header style="background-image: url('assets/img/04.jpg');position: relative">
+    <div style="position:fixed; top: 7% ; left: 50%;transform: translate(-50%, -50%);z-index: 10">
+        <nav class="menu">
+            <span><b>Monteiro</b> | Designer for Church</span>
+            <div style="display: flex; gap: 1rem">
+                <a href="index.html">Inicial</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="novidades.html">Novidades</a>
+                <a href="servicos.html">Serviços</a>
+            </div>
+            <div class="btn">
+                <a href="contatos.html" style="background-color: #2680EA; padding:.4rem .5rem; border-radius: 5px">Fale
+                    Conosco</a>
+            </div>
+        </nav>
+    </div>
+    <div style="">
+        <div class="hero-internal">
+        </div>
+    </div>
+</header>
+<main class="container">
+    <section style=" display: flex;padding: 1rem 5rem; align-items: center;margin-bottom: 1.5rem">
+        <div style="width: 100%">
+            <h1 style="font-size: 1.875rem;line-height: 1.375;">Novidades</h1>
+            <p style="color: #7b809a;font-size: 1rem">Ideial para igreja ou eventos.</p>
+        </div>
+    </section>
+    <section class="section-image" style="background-image: url('./assets/img/filmando.png')">
+        <span style="position: absolute;background-size: cover;background-position: center center;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.8;background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);border-radius: 15px;"></span>
+        <div class="width-50 section-image-article" style=" position: relative;">
+            <h2 style="font-size: 1.5rem;line-height: 1.375;">Se liga!</h2>
+            <p style="font-size: 3rem;line-height: 1.25;letter-spacing: 0;font-weight: 700">Agora vamos até você!</p>
+            <p style="font-size: 1.25rem;font-weight: 400;line-height: 1.625;opacity: .8">
+                Podemos presencialmente atender a necessidade da sua igreja com sessão de fotos para eventos,
+                transmissão ao vivo ou gravações de suas palestras/pregações!
+            </p>
+        </div>
+    </section>
+    <section class="section form-newsletter">
+        <div class="width-50">
+            <div style="margin-bottom: 1rem">
+                <h3 style="font-size: 1.5rem;line-height: 1.9">
+                    Seja o o primeiro saber!
+                </h3>
+                <p style="color: #727171">
+                    Inscreva-se e conheça todas as nossas novidades
+                </p>
+            </div>
+            <div class="">
+                <form action="">
+
+                    <input type="email">
+                    <button type="submit">INSCREVA-SE</button>
+                </form>
+            </div>
+        </div>
+        <div class="width-50 centerable">
+            <img src="./assets/img/102642-contact.gif" alt="">
+        </div>
+    </section>
+</main>
+<footer class="" style="">
+    <div class="columns">
+        <div class="width-50">
+            <h4><b style="color: #24292E">Monteiro</b>
+                |
+                Designed for Church</h4>
+            <small>Copyright © 2022 Criado por João Monteiro</small>
+        </div>
+        <div class="width-50 cite">
+            <p>"A persistência é o caminho do êxito."</p>
+            <span style="color: #6c757d"> Charles Chaplins</span>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('menu').addEventListener("click", () => {
+        if (document.getElementById('menu-mobile').classList.contains('show')) {
+            document.getElementById('menu-mobile').style.display = 'none'
+            document.getElementById('menu-mobile').classList.remove('show')
+        } else {
+
+            document.getElementById('menu-mobile').classList.add('show')
+            document.getElementById('menu-mobile').style.display = 'flex'
+        }
+    })
+</script>
+</body>
+</html>

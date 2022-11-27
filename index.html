@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Monteiro - HOME</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="menu-float">
+        <nav class="menu">
+            <span><b>Monteiro</b> | Designer for Church</span>
+            <div style="display: flex; gap: 1rem">
+                <a href="index.html">Inicial</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="novidades.html">Novidades</a>
+                <a href="servicos.html">Serviços</a>
+            </div>
+            <div class="btn">
+                <a href="contatos.html" style="background-color: #2680EA; padding:.4rem .5rem; border-radius: 5px">Fale
+                    Conosco</a>
+            </div>
+        </nav>
+    </div>
+    <div class="menu-mobile">
+        <nav>
+            <div style="display: flex;justify-content: space-around;border-bottom: 1px solid rgba(243, 243, 243, 0.42);padding-bottom: .5rem">
+                <p><b>Monteiro</b> | Designer for Church</p>
+                <button id="menu" class="hambuguer">&#9776;</button>
+            </div>
+            <div id="menu-mobile" class="menu-item">
+                <a href="index.html">Inicial</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="novidades.html">Novidades</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contatos.html">Fale
+                    Conosco</a>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="hero">
+            <h1>Hora de alcançar vôos mais altos!</h1>
+            <p>Criamos experiências através da identidade visual da sua
+                igreja.</p>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <section class="section">
+        <div class="width-50">
+            <div style="padding-bottom: 2rem">
+                <h2 class="title-section">Agora vamos até você!</h2>
+                <p class="subtitle-section">Podemos presencialmente atender a necessidade
+                    da
+                    sua igreja!</p>
+            </div>
+            <a class="button-more" href="servicos.html">Saiba
+                mais</a>
+        </div>
+        <div class="width-50">
+            <img class="image-home" src="./assets/img/filmando.png" alt="">
+        </div>
+    </section>
+    <section class="section form-newsletter">
+        <div class="width-50">
+            <div style="margin-bottom: 1rem">
+                <h3 style="font-size: 1.5rem;line-height: 1.9">
+                    Seja o o primeiro saber!
+                </h3>
+                <p style="color: #727171">
+                    Inscreva-se e conheça todas as nossas novidades
+                </p>
+            </div>
+            <div class="">
+                <form action="">
+
+                    <input type="email">
+                    <button type="submit">INSCREVA-SE</button>
+                </form>
+            </div>
+        </div>
+        <div class="width-50 centerable">
+            <img src="./assets/img/102642-contact.gif" alt="">
+        </div>
+    </section>
+</main>
+<footer class="" style="">
+    <div class="columns">
+        <div class="width-50">
+            <h4><b style="color: #24292E">Monteiro</b>
+                |
+                Designed for Church</h4>
+            <small>Copyright © 2022 Criado por João Monteiro</small>
+        </div>
+        <div class="width-50 cite">
+            <p>"A persistência é o caminho do êxito."</p>
+            <span style="color: #6c757d"> Charles Chaplins</span>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('menu').addEventListener("click", () => {
+        if (document.getElementById('menu-mobile').classList.contains('show')) {
+            document.getElementById('menu-mobile').style.display = 'none'
+            document.getElementById('menu-mobile').classList.remove('show')
+        } else {
+
+            document.getElementById('menu-mobile').classList.add('show')
+            document.getElementById('menu-mobile').style.display = 'flex'
+        }
+    })
+</script>
+</body>
+</html>
